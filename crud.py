@@ -14,7 +14,7 @@ def create_user(nome, telefone, email, usuario, senha):
     cursor = conn.cursor()
     query = "insert usuario(nome, telefone, email, usuario, senha) VALUES(%s, %s, %s, %s, %s)"
     cursor.execute(query, [nome, telefone, email,usuario, senha])
-    cursor.commit()
+    conn.commit()
     cursor.close()
     conn.close()
 
