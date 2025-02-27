@@ -14,11 +14,10 @@ class CRUDApp:
         #Labels
         tk.Label(self.root, text="Nome:").grid(row=0, column=0)
         tk.Label(self.root, text="Telefone:").grid(row=1, column=0)    
-        tk.Label(self.root, text="Email:").grid(row=2, column=0)    #email tem que ser adicionado na tabela !!! nao esta adicionado 
+        tk.Label(self.root, text="Email:").grid(row=2, column=0)    
         tk.Label(self.root, text="Usuario:").grid(row=3, column=0)    
         tk.Label(self.root, text="Senha:").grid(row=4, column=0)  
-
-        tk.Label(self.root, text="User ID(for update/delete):").grid(row=4, column=5)    
+        tk.Label(self.root, text="User ID").grid(row=5, column=0)    
 
         #Criar as caixa para digitar os valores 
         self.nome_entry = tk.Entry(self.root)       
@@ -28,14 +27,13 @@ class CRUDApp:
         self.senha_entry = tk.Entry(self.root) 
         self.user_id_entry = tk.Entry(self.root) 
 
-        self.nome_entry.grid(row=1, column=1)
-        self.telefone_entry.grid(row=2, column=1)
-        self.email_entry.grid(row=3, column=1)
-        self.usuario_entry.grid(row=4, column=1)
-        self.senha_entry.grid(row=5, column=1)
-        self.nome_entry.grid(row=6, column=1)
+        self.nome_entry.grid(row=0, column=1)
+        self.telefone_entry.grid(row=1, column=1)
+        self.email_entry.grid(row=2, column=1)
+        self.usuario_entry.grid(row=3, column=1)
+        self.senha_entry.grid(row=4, column=1)
+        self.nome_entry.grid(row=5, column=1)
 
-        self.user_id_entry.grid(row=7, column=1)
 
         #BOTAO DO CRUD
         tk.Button(self.root, text="Criar usuario", command=self.create_user).grid(row=6, column=0, columnspan=1)
