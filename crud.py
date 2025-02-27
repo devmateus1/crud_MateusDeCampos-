@@ -1,4 +1,4 @@
-import mysql.connector
+import mysql.connector  
 from config import MYSQL_HOST, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DATABASE
 
 def get_connection():
