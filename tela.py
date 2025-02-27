@@ -56,7 +56,7 @@ class CRUDApp:
             self.email_entry.delete(0,tk.END)
             self.usuario_entry.delete(0,tk.END)
             self.senha_entry.delete(0,tk.END)
-            messagebox.showerror("Success", "Usuario alterado com sucesso.")
+            messagebox.showerror("Success", "Usuario criado com sucesso.")
 
         else:
              messagebox.showerror("Error", "Todos os campos são obrigatórios") 
@@ -82,7 +82,7 @@ class CRUDApp:
             self.email_entry.delete(0,tk.END)
             self.usuario_entry.delete(0,tk.END)
             self.senha_entry.delete(0,tk.END)
-            messagebox.showerror("Success", "Usuario criado com sucesso.")
+            messagebox.showerror("Success", "Usuario atualizado com sucesso.")
 
         else:
              messagebox.showerror("Error", "Todos os campos são obrigatórios")    
